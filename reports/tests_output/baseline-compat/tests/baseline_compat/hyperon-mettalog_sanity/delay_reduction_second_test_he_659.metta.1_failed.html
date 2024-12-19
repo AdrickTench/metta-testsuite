@@ -47,7 +47,7 @@
 <body class="body_foreground body_background" style="font-size: normal;" >
 <pre class="ansi2html-content"
 >
-Script started on 2024-12-18 22:35:01+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="-1" LINES="-1"]
+Script started on 2024-12-19 18:31:25+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="-1" LINES="-1"]
 P;HTML|
 ;         #(set_debug transpiler false)
 
@@ -122,9 +122,9 @@ Script started on 2024-12-18 22:35:01+00:00 [TERM="xterm-256color" TTY="/dev/pts
 P;HTML|
 ;                          #( = 4 "[(: (Rule (Cons (: CPU False (0⍃ 2)) (Cons (: 2 Prime) Nil))) (0⍃' 2))]" )
 P;HTML|
-;                          #( = 5 "0.09user 0.00system 0:00.10elapsed 99%CPU (0avgtext+0avgdata 27408maxresident)k" )
+;                          #( = 5 "0.09user 0.01system 0:00.10elapsed 100%CPU (0avgtext+0avgdata 27360maxresident)k" )
 P;HTML|
-;                           #( = 5 "0inputs+0outputs (0major+3388minor)pagefaults 0swaps" )
+;                           #( = 5 "0inputs+0outputs (0major+3403minor)pagefaults 0swaps" )
 P;HTML|
 ;                        #(load_answer_file /home/runner/work/metta-testsuite/metta-testsuite/tests/baseline_compat/hyperon-mettalog_sanity/delay_reduction_second_test_he_659.metta.answers /home/runner/work/metta-testsuite/metta-testsuite/tests/baseline_compat/hyperon-mettalog_sanity/delay_reduction_second_test_he_659.metta)
 
@@ -246,7 +246,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.DELAY-REDUCTION-SECOND-TEST-HE-659.01</h3>
 ; 
 ; EVAL TEST
-; took 0.032 secs. (31.58 milliseconds) 
+; took 0.031 secs. (31.08 milliseconds) 
 
 !(assertEqualToResult (bc &kb (: $prf (0⍃' $x)) (S (S Z))) ((: (Rule (Cons (: CPU False (0⍃ 2)) (Cons (: 2 Prime) Nil))) (0⍃' 2))))
 
@@ -263,7 +263,7 @@ Deterministic: <span class="ansi33"
 Deterministic: <span class="ansi33"
 >(#(Error #(got ((: (Rule (Cons (: CPU True (0⍃ 2)) (Cons (: 2 Prime) Nil))) (0⍃' 2)))) #(expected ((: (Rule (Cons (: CPU False (0⍃ 2)) (Cons (: 2 Prime) Nil))) (0⍃' 2))))))
 </span><span class="ansi32"
->% 887,440 inferences, 0.161 CPU in 0.163 seconds (99% CPU, 5507321 Lips)
+>% 900,558 inferences, 0.161 CPU in 0.164 seconds (99% CPU, 5582053 Lips)
 </span>P;HTML|
 ;                #( = /home/runner/work/metta-testsuite/metta-testsuite/tests/baseline_compat/hyperon-mettalog_sanity/delay_reduction_second_test_he_659.metta 0 )
 <span class="ansi1"
@@ -312,7 +312,7 @@ Deterministic: <span class="ansi33"
 <span class="ansi31"
 >#(in #(maybe_halt 7) #(unwind #(halt 7)))
 </span>
-Script done on 2024-12-18 22:35:08+00:00 [COMMAND_EXIT_CODE="7"]
+Script done on 2024-12-19 18:31:33+00:00 [COMMAND_EXIT_CODE="7"]
 
 </pre>
 </body>

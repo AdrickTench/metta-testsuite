@@ -60,7 +60,7 @@
 <body class="body_foreground body_background" style="font-size: normal;" >
 <pre class="ansi2html-content"
 >
-Script started on 2024-12-18 22:37:58+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="-1" LINES="-1"]
+Script started on 2024-12-19 18:34:22+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="-1" LINES="-1"]
 P;HTML|
 ;         #(set_debug transpiler false)
 
@@ -167,9 +167,9 @@ Script started on 2024-12-18 22:37:58+00:00 [TERM="xterm-256color" TTY="/dev/pts
 P;HTML|
 ;                                #( = 18 "Missed result: 3)]" )
 P;HTML|
-;                                 #( = 18 "0.14user 0.02system 0:00.16elapsed 99%CPU (0avgtext+0avgdata 26528maxresident)k" )
+;                                 #( = 18 "0.15user 0.01system 0:00.16elapsed 99%CPU (0avgtext+0avgdata 26640maxresident)k" )
 P;HTML|
-;                                 #( = 18 "0inputs+0outputs (0major+3195minor)pagefaults 0swaps" )
+;                                 #( = 18 "0inputs+0outputs (0major+3194minor)pagefaults 0swaps" )
 P;HTML|
 ;                        #(load_answer_file /home/runner/work/metta-testsuite/metta-testsuite/tests/baseline_compat/hyperon-mettalog_sanity/intersection_tests.metta.answers /home/runner/work/metta-testsuite/metta-testsuite/tests/baseline_compat/hyperon-mettalog_sanity/intersection_tests.metta)
 
@@ -183,7 +183,7 @@ Script started on 2024-12-18 22:37:58+00:00 [TERM="xterm-256color" TTY="/dev/pts
 >;; HYPERON-METTALOG-SANITY.INTERSECTION-TESTS.01</h3>
 ; 
 ; EVAL TEST
-; took 0.048 secs. (48.38 milliseconds) 
+; took 0.050 secs. (49.64 milliseconds) 
 
 !(assertEqual (intersection (superpose (a b c d)) (superpose (c d e f))) (superpose (c d)))
 
@@ -206,7 +206,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.INTERSECTION-TESTS.02</h3>
 ; 
 ; EVAL TEST
-; took 0.000947 secs. (947.36 microseconds) 
+; took 0.000999 secs. (999.23 microseconds) 
 
 !(assertEqual (intersection (superpose (a b c d)) (superpose (b c))) (superpose (b c)))
 
@@ -228,7 +228,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.INTERSECTION-TESTS.03</h3>
 ; 
 ; EVAL TEST
-; took 0.001 secs. (1.26 milliseconds) 
+; took 0.001 secs. (1.27 milliseconds) 
 
 !(assertEqual (intersection (intersection (superpose (a b c d)) (superpose (b c))) (superpose (d))) (superpose ()))
 
@@ -248,7 +248,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.INTERSECTION-TESTS.04</h3>
 ; 
 ; EVAL TEST
-; took 0.004 secs. (3.89 milliseconds) 
+; took 0.004 secs. (4.43 milliseconds) 
 
 !(assertEqual (intersection (superpose ((foo bar) (bar baz) qux)) (superpose ((bar baz) qux))) (superpose ((bar baz) qux)))
 
@@ -270,7 +270,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.INTERSECTION-TESTS.05</h3>
 ; 
 ; EVAL TEST
-; took 0.001 secs. (1.15 milliseconds) 
+; took 0.001 secs. (1.11 milliseconds) 
 
 !(assertEqual (intersection (superpose (1 2 3 foo bar)) (superpose (2 foo))) (superpose (2 foo)))
 
@@ -299,7 +299,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.INTERSECTION-TESTS.06</h3>
 ; 
 ; EVAL TEST
-; took 0.001 secs. (1.18 milliseconds) 
+; took 0.001 secs. (1.14 milliseconds) 
 
 !(assertEqual (intersection (superpose (a b b c d)) (superpose (b c))) (superpose (b c)))
 
@@ -321,7 +321,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.INTERSECTION-TESTS.07</h3>
 ; 
 ; EVAL TEST
-; took 0.001 secs. (1.10 milliseconds) 
+; took 0.001 secs. (1.14 milliseconds) 
 
 !(assertEqual (unique (intersection (superpose (a b b c)) (superpose (b c c d)))) (superpose (b c)))
 
@@ -343,7 +343,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.INTERSECTION-TESTS.08</h3>
 ; 
 ; EVAL TEST
-; took 0.000642 secs. (642.47 microseconds) 
+; took 0.000726 secs. (725.81 microseconds) 
 
 !(assertEqual (intersection (superpose (a b c)) (superpose ())) (superpose ()))
 
@@ -363,7 +363,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.INTERSECTION-TESTS.09</h3>
 ; 
 ; EVAL TEST
-; took 0.000791 secs. (791.25 microseconds) 
+; took 0.000811 secs. (811.03 microseconds) 
 
 !(assertEqual (intersection (superpose (a b c)) (superpose (x y z))) (superpose ()))
 
@@ -383,7 +383,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.INTERSECTION-TESTS.10</h3>
 ; 
 ; EVAL TEST
-; took 0.001 secs. (1.06 milliseconds) 
+; took 0.001 secs. (1.12 milliseconds) 
 
 !(assertEqual (intersection (superpose (a b c d)) (superpose (b c x y))) (superpose (b c)))
 
@@ -405,7 +405,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.INTERSECTION-TESTS.11</h3>
 ; 
 ; EVAL TEST
-; took 0.001 secs. (1.10 milliseconds) 
+; took 0.001 secs. (1.08 milliseconds) 
 
 !(assertEqual (intersection (superpose (a b c d)) (superpose (a b c d))) (superpose (a b c d)))
 
@@ -427,7 +427,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.INTERSECTION-TESTS.12</h3>
 ; 
 ; EVAL TEST
-; took 0.004 secs. (4.07 milliseconds) 
+; took 0.005 secs. (4.62 milliseconds) 
 
 !(assertEqual (intersection (superpose (a b c (a b c))) (superpose (a b c (a b c)))) (superpose (a b c (a b c))))
 
@@ -451,7 +451,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.INTERSECTION-TESTS.13</h3>
 ; 
 ; EVAL TEST
-; took 0.000944 secs. (944.47 microseconds) 
+; took 0.000883 secs. (883.20 microseconds) 
 
 !(assertEqual (intersection (superpose (a b c d)) (superpose (c))) (superpose (c)))
 
@@ -473,7 +473,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.INTERSECTION-TESTS.14</h3>
 ; 
 ; EVAL TEST
-; took 0.001 secs. (1.42 milliseconds) 
+; took 0.001 secs. (1.39 milliseconds) 
 
 !(assertEqual (intersection (superpose (a b c d e f)) (superpose (b c d))) (superpose (b c d)))
 
@@ -495,7 +495,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.INTERSECTION-TESTS.15</h3>
 ; 
 ; EVAL TEST
-; took 0.003 secs. (3.24 milliseconds) 
+; took 0.004 secs. (3.71 milliseconds) 
 
 !(assertEqual (intersection (superpose (a (b c) d)) (superpose ((b c) e f))) (superpose ((b c))))
 
@@ -517,7 +517,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.INTERSECTION-TESTS.16</h3>
 ; 
 ; EVAL TEST
-; took 0.001 secs. (1.43 milliseconds) 
+; took 0.001 secs. (1.49 milliseconds) 
 
 !(assertEqual (intersection (superpose ((a b) (c d))) (superpose ())) (superpose ()))
 
@@ -537,7 +537,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.INTERSECTION-TESTS.17</h3>
 ; 
 ; EVAL TEST
-; took 0.001 secs. (1.19 milliseconds) 
+; took 0.001 secs. (1.23 milliseconds) 
 
 !(assertEqual (intersection (superpose (1 2 3 foo bar)) (superpose (3 foo baz))) (superpose (3 foo)))
 
@@ -559,7 +559,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.INTERSECTION-TESTS.18</h3>
 ; 
 ; EVAL TEST
-; took 0.004 secs. (3.72 milliseconds) 
+; took 0.004 secs. (4.28 milliseconds) 
 
 !(assertEqual (intersection (superpose ((foo $x) (bar $y))) (superpose ((bar $y) (foo qux)))) (superpose ((bar $y))))
 
@@ -581,7 +581,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.INTERSECTION-TESTS.19</h3>
 ; 
 ; EVAL TEST
-; took 0.000825 secs. (824.92 microseconds) 
+; took 0.000873 secs. (872.64 microseconds) 
 
 !(assertEqual (intersection (superpose ($x b c)) (superpose (b $y c))) (superpose (b c)))
 
@@ -603,7 +603,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.INTERSECTION-TESTS.20</h3>
 ; 
 ; EVAL TEST
-; took 0.004 secs. (3.62 milliseconds) 
+; took 0.004 secs. (4.00 milliseconds) 
 
 !(assertEqual (intersection (superpose (($x b) (c d))) (superpose ((a $y) (c d)))) (superpose ((c d))))
 
@@ -625,7 +625,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.INTERSECTION-TESTS.21</h3>
 ; 
 ; EVAL TEST
-; took 0.003 secs. (3.33 milliseconds) 
+; took 0.002 secs. (2.17 milliseconds) 
 
 !(assertEqualToResult (pred-intersection unified (superpose (($x (+ 1 2)) (3 4))) (superpose ((3 $y) (4 (+ 1 2))))) ((3 3) (3 4) (4 3)))
 
@@ -651,7 +651,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.INTERSECTION-TESTS.22</h3>
 ; 
 ; EVAL TEST
-; took 0.008 secs. (7.76 milliseconds) 
+; took 0.005 secs. (4.67 milliseconds) 
 
 !(assertEqual (intersection (superpose ((foo (+ 1 2)) (bar $y))) (superpose ((foo 3) (bar baz)))) (superpose ((foo 3))))
 
@@ -673,7 +673,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.INTERSECTION-TESTS.23</h3>
 ; 
 ; EVAL TEST
-; took 0.010 secs. (9.69 milliseconds) 
+; took 0.007 secs. (6.61 milliseconds) 
 
 !(assertNotEqual (pred-intersection unified (superpose ((foo (+ 1 2)) (bar $y))) (superpose ((foo 3) (bar baz)))) (superpose ((foo 3) (bar $y))))
 
@@ -684,7 +684,6 @@ Deterministic: <span class="ansi33"
         ( (foo 3) (bar baz)) 
         ( (foo 3) (bar $10000))) ))
 </span>;; no-results ;; 
-
 ;;;; Test intersection with variables and evaluated expressions
 ;;;; This ensures that variables and evaluated expressions are correctly intersected.
 <span class="ansi38-013099040"
@@ -695,7 +694,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.INTERSECTION-TESTS.24</h3>
 ; 
 ; EVAL TEST
-; took 0.002 secs. (1.88 milliseconds) 
+; took 0.002 secs. (1.71 milliseconds) 
 
 !(assertEqual (intersection (superpose (($x b) (+ 2 2))) (superpose ((a $y) 4))) (superpose (4)))
 
@@ -718,7 +717,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.INTERSECTION-TESTS.25</h3>
 ; 
 ; EVAL TEST
-; took 0.003 secs. (2.74 milliseconds) 
+; took 0.003 secs. (2.72 milliseconds) 
 
 !(assertEqual (intersection (superpose ($x (f $x))) (superpose ((f (f $x))))) (superpose ()))
 
@@ -738,7 +737,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.INTERSECTION-TESTS.26</h3>
 ; 
 ; EVAL TEST
-; took 0.003 secs. (2.67 milliseconds) 
+; took 0.003 secs. (3.07 milliseconds) 
 
 !(assertEqual (intersection (superpose ($y (f $x))) (superpose ($a (f $b)))) (superpose ((f $x))))
 
@@ -760,7 +759,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.INTERSECTION-TESTS.27</h3>
 ; 
 ; EVAL TEST
-; took 0.003 secs. (2.53 milliseconds) 
+; took 0.003 secs. (2.95 milliseconds) 
 
 !(assertEqual (intersection (superpose ((f $x) $y)) (superpose ((f $b) $a))) (superpose ((f $x))))
 
@@ -781,7 +780,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.INTERSECTION-TESTS.28</h3>
 ; 
 ; EVAL TEST
-; took 0.002 secs. (2.50 milliseconds) 
+; took 0.003 secs. (3.08 milliseconds) 
 
 !(assertEqual (intersection (superpose ((f $x) $x)) (superpose ((f $a) $a))) (superpose ((f $x) $x)))
 
@@ -802,7 +801,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.INTERSECTION-TESTS.29</h3>
 ; 
 ; EVAL TEST
-; took 0.003 secs. (2.55 milliseconds) 
+; took 0.003 secs. (3.04 milliseconds) 
 
 !(assertEqual (intersection (superpose ($x (f $x))) (superpose ($a (f $a)))) (superpose ($x (f $x))))
 
@@ -824,7 +823,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.INTERSECTION-TESTS.30</h3>
 ; 
 ; EVAL TEST
-; took 0.003 secs. (2.57 milliseconds) 
+; took 0.003 secs. (2.99 milliseconds) 
 
 !(assertEqual (intersection (superpose ($y (f $x))) (superpose ($x (f $x)))) (superpose ((f $x))))
 
@@ -846,7 +845,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.INTERSECTION-TESTS.31</h3>
 ; 
 ; EVAL TEST
-; took 0.003 secs. (2.58 milliseconds) 
+; took 0.003 secs. (3.07 milliseconds) 
 
 !(assertEqual (intersection (superpose ($x (f $y))) (superpose ((f $y) $x))) (superpose ($x (f $y))))
 
@@ -872,7 +871,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.INTERSECTION-TESTS.32</h3>
 ; 
 ; EVAL TEST
-; took 0.002 secs. (1.81 milliseconds) 
+; took 0.002 secs. (1.70 milliseconds) 
 
 !(assertEqual (intersect-elements (1 2 3 foo bar) (2 foo)) (2 foo))
 
@@ -891,7 +890,7 @@ Deterministic: <span class="ansi33"
 Deterministic: <span class="ansi33"
 >()
 </span><span class="ansi32"
->% 4,453,202 inferences, 0.656 CPU in 0.658 seconds (100% CPU, 6789124 Lips)
+>% 4,456,301 inferences, 0.659 CPU in 0.662 seconds (100% CPU, 6757095 Lips)
 </span>P;HTML|
 ;                #( = /home/runner/work/metta-testsuite/metta-testsuite/tests/baseline_compat/hyperon-mettalog_sanity/intersection_tests.metta 0 )
 <span class="ansi1"
@@ -998,7 +997,7 @@ Deterministic: <span class="ansi33"
 <span class="ansi31"
 >#(in #(maybe_halt 7) #(unwind #(halt 7)))
 </span>
-Script done on 2024-12-18 22:38:06+00:00 [COMMAND_EXIT_CODE="7"]
+Script done on 2024-12-19 18:34:30+00:00 [COMMAND_EXIT_CODE="7"]
 
 </pre>
 </body>

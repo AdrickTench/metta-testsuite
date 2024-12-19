@@ -38,7 +38,7 @@
 <body class="body_foreground body_background" style="font-size: normal;" >
 <pre class="ansi2html-content"
 >
-Script started on 2024-12-18 22:33:55+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="-1" LINES="-1"]
+Script started on 2024-12-19 18:30:20+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="-1" LINES="-1"]
 P;HTML|
 ;         #(set_debug transpiler false)
 
@@ -113,9 +113,9 @@ Script started on 2024-12-18 22:33:55+00:00 [TERM="xterm-256color" TTY="/dev/pts
 P;HTML|
 ;                          #( = 2 "Missed result: 1)]" )
 P;HTML|
-;                          #( = 2 "0.02user 0.02system 0:00.04elapsed 100%CPU (0avgtext+0avgdata 26172maxresident)k" )
+;                          #( = 2 "0.03user 0.01system 0:00.04elapsed 97%CPU (0avgtext+0avgdata 26160maxresident)k" )
 P;HTML|
-;                           #( = 2 "0inputs+0outputs (0major+3105minor)pagefaults 0swaps" )
+;                           #( = 2 "0inputs+0outputs (0major+3104minor)pagefaults 0swaps" )
 P;HTML|
 ;                        #(load_answer_file /home/runner/work/metta-testsuite/metta-testsuite/tests/baseline_compat/hyperon-mettalog_sanity/catch_throw_tests_mw.metta.answers /home/runner/work/metta-testsuite/metta-testsuite/tests/baseline_compat/hyperon-mettalog_sanity/catch_throw_tests_mw.metta)
 
@@ -132,7 +132,7 @@ Script started on 2024-12-18 22:33:55+00:00 [TERM="xterm-256color" TTY="/dev/pts
 >;; HYPERON-METTALOG-SANITY.CATCH-THROW-TESTS.01</h3>
 ; 
 ; EVAL TEST
-; took 0.000493 secs. (493.45 microseconds) 
+; took 0.000588 secs. (588.44 microseconds) 
 
 !(assertEqualToResult (catch (foo) Error Error) (1 2))
 
@@ -153,7 +153,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.CATCH-THROW-TESTS.02</h3>
 ; 
 ; EVAL TEST
-; took 0.000365 secs. (364.73 microseconds) 
+; took 0.000424 secs. (424.20 microseconds) 
 
 !(assertEqualToResult (catch (throw Error) Error "An exception was caught") ("An exception was caught"))
 
@@ -174,7 +174,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.CATCH-THROW-TESTS.03</h3>
 ; 
 ; EVAL TEST
-; took 0.000252 secs. (252.30 microseconds) 
+; took 0.000349 secs. (348.92 microseconds) 
 
 !(assertEqualToResult (catch (catch (throw Error) Error "Error level 2") Error "Error level 1") ("Error level 2"))
 
@@ -194,7 +194,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.CATCH-THROW-TESTS.04</h3>
 ; 
 ; EVAL TEST
-; took 0.000363 secs. (362.94 microseconds) 
+; took 0.000442 secs. (442.35 microseconds) 
 
 !(assertEqualToResult (catch (catch (throw Error1) Error2 "Error level 2") Error1 "Error level 1") ("Error level 1"))
 
@@ -215,7 +215,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.CATCH-THROW-TESTS.05</h3>
 ; 
 ; EVAL TEST
-; took 0.000327 secs. (327.43 microseconds) 
+; took 0.000397 secs. (396.66 microseconds) 
 
 !(assertEqualToResult (catch (catch (throw Error2) Error2 (throw Error1)) Error1 "Error level 1") ("Error level 1"))
 
@@ -246,7 +246,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.CATCH-THROW-TESTS.06</h3>
 ; 
 ; EVAL TEST
-; took 0.000600 secs. (600.28 microseconds) 
+; took 0.000663 secs. (663.11 microseconds) 
 
 !(assertEqualToResult (catch (bar) Error "An exception was caught") (1 2 "An exception was caught"))
 
@@ -267,7 +267,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.CATCH-THROW-TESTS.07</h3>
 ; 
 ; EVAL TEST
-; took 0.000233 secs. (232.90 microseconds) 
+; took 0.000241 secs. (240.73 microseconds) 
 
 !(assertEqualToResult (catch (throw (Error "This is an error message")) (Error $message) $message) ("This is an error message"))
 
@@ -288,7 +288,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.CATCH-THROW-TESTS.08</h3>
 ; 
 ; EVAL TEST
-; took 0.000371 secs. (371.28 microseconds) 
+; took 0.000434 secs. (434.39 microseconds) 
 
 !(assertEqualToResult (catch (catch (throw 3) (+ 1 2) "Error level 2") 3 "Error level 1") ("Error level 1"))
 
@@ -309,7 +309,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.CATCH-THROW-TESTS.09</h3>
 ; 
 ; EVAL TEST
-; took 0.000473 secs. (473.21 microseconds) 
+; took 0.000462 secs. (461.87 microseconds) 
 
 !(assertEqualToResult (catch (catch (throw (+ 1 2)) (+ 1 2) "Error level 2") 3 "Error level 1") ("Error level 1"))
 
@@ -330,7 +330,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.CATCH-THROW-TESTS.10</h3>
 ; 
 ; EVAL TEST
-; took 0.000459 secs. (459.44 microseconds) 
+; took 0.000510 secs. (510.01 microseconds) 
 
 !(assertEqualToResult (catch (throw (Error 2)) (Error $x) (+ $x 1)) (3))
 
@@ -343,7 +343,7 @@ Deterministic: <span class="ansi33"
 Deterministic: <span class="ansi33"
 >()
 </span><span class="ansi32"
->% 260,932 inferences, 0.075 CPU in 0.077 seconds (97% CPU, 3477432 Lips)
+>% 261,650 inferences, 0.078 CPU in 0.080 seconds (97% CPU, 3370029 Lips)
 </span>P;HTML|
 ;                #( = /home/runner/work/metta-testsuite/metta-testsuite/tests/baseline_compat/hyperon-mettalog_sanity/catch_throw_tests_mw.metta 0 )
 <span class="ansi1"
@@ -404,7 +404,7 @@ Deterministic: <span class="ansi33"
 <span class="ansi31"
 >#(in #(maybe_halt 7) #(unwind #(halt 7)))
 </span>
-Script done on 2024-12-18 22:34:03+00:00 [COMMAND_EXIT_CODE="7"]
+Script done on 2024-12-19 18:30:27+00:00 [COMMAND_EXIT_CODE="7"]
 
 </pre>
 </body>

@@ -41,7 +41,7 @@
 <body class="body_foreground body_background" style="font-size: normal;" >
 <pre class="ansi2html-content"
 >
-Script started on 2024-12-18 22:29:09+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="-1" LINES="-1"]
+Script started on 2024-12-19 18:25:00+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="-1" LINES="-1"]
 ^@P;HTML|
 ;         #(set_debug transpiler false)
 
@@ -122,9 +122,9 @@ Script started on 2024-12-18 22:29:09+00:00 [TERM="xterm-256color" TTY="/dev/pts
 P;HTML|
 ;                           #( = 7 "[()]" )
 P;HTML|
-;                           #( = 8 "0.04user 0.00system 0:00.05elapsed 98%CPU (0avgtext+0avgdata 26100maxresident)k" )
+;                           #( = 8 "0.03user 0.01system 0:00.05elapsed 100%CPU (0avgtext+0avgdata 26284maxresident)k" )
 P;HTML|
-;                            #( = 8 "0inputs+0outputs (0major+3118minor)pagefaults 0swaps" )
+;                            #( = 8 "0inputs+0outputs (0major+3123minor)pagefaults 0swaps" )
 P;HTML|
 ;                        #(load_answer_file /home/runner/work/metta-testsuite/metta-testsuite/tests/baseline_compat/hyperon-experimental_scripts/a1_symbols.metta.answers /home/runner/work/metta-testsuite/metta-testsuite/tests/baseline_compat/hyperon-experimental_scripts/a1_symbols.metta)
 
@@ -154,7 +154,7 @@ Script started on 2024-12-18 22:29:09+00:00 [TERM="xterm-256color" TTY="/dev/pts
 >;; HYPERON-EXPERIMENTAL-SCRIPTS.A1-SYMBOLS.01</h3>
 ; 
 ; EVAL TEST
-; took 0.000697 secs. (697.10 microseconds) 
+; took 0.000866 secs. (866.48 microseconds) 
 
 !(assertEqualToResult (match &self (($x leaf2) leaf3) $x) (leaf1 (leaf0 leaf1)))
 
@@ -185,7 +185,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-EXPERIMENTAL-SCRIPTS.A1-SYMBOLS.02</h3>
 ; 
 ; EVAL TEST
-; took 0.000934 secs. (933.97 microseconds) 
+; took 0.002 secs. (1.54 milliseconds) 
 
 !(assertEqualToResult (match &self ($who is a $what) ($who the $what)) ((Sam the frog) (Tom the cat) (Sophia the robot)))
 
@@ -220,7 +220,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-EXPERIMENTAL-SCRIPTS.A1-SYMBOLS.03</h3>
 ; 
 ; EVAL TEST
-; took 0.000502 secs. (502.13 microseconds) 
+; took 0.000756 secs. (756.36 microseconds) 
 
 !(assertEqualToResult (match &self (:= (Green $who) T) ($who is really green)) ((Sam is really green)))
 
@@ -240,7 +240,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-EXPERIMENTAL-SCRIPTS.A1-SYMBOLS.04</h3>
 ; 
 ; EVAL TEST
-; took 0.000747 secs. (746.98 microseconds) 
+; took 0.001 secs. (1.15 milliseconds) 
 
 !(assertEqualToResult (match &self (:= ($color $who) T) ($who is really $color)) ((Sam is really Green) (Tom is really White)))
 
@@ -260,7 +260,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-EXPERIMENTAL-SCRIPTS.A1-SYMBOLS.05</h3>
 ; 
 ; EVAL TEST
-; took 0.001 secs. (1.03 milliseconds) 
+; took 0.002 secs. (1.69 milliseconds) 
 
 !(assertEqualToResult (match &self (:= ($color $who) $tv) ('It's' $tv that $who is $color)) (('It's' T that Sam is Green) ('It's' T that Tom is White) ('It's' F that Tom is Green)))
 
@@ -285,7 +285,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-EXPERIMENTAL-SCRIPTS.A1-SYMBOLS.06</h3>
 ; 
 ; EVAL TEST
-; took 0.000195 secs. (194.79 microseconds) 
+; took 0.000183 secs. (183.20 microseconds) 
 
 !(assertEqualToResult (match &self (:= (Green Tom) $tv) $tv) (F))
 
@@ -315,7 +315,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-EXPERIMENTAL-SCRIPTS.A1-SYMBOLS.07</h3>
 ; 
 ; EVAL TEST
-; took 0.000220 secs. (219.53 microseconds) 
+; took 0.000233 secs. (233.18 microseconds) 
 
 !(assertEqualToResult (match &self (isa $color color) $color) (red green blue))
 
@@ -328,7 +328,7 @@ Deterministic: <span class="ansi33"
 Deterministic: <span class="ansi33"
 >()
 </span><span class="ansi32"
->% 298,020 inferences, 0.107 CPU in 0.110 seconds (98% CPU, 2776782 Lips)
+>% 312,654 inferences, 0.087 CPU in 0.089 seconds (98% CPU, 3606989 Lips)
 </span>P;HTML|
 ;                #( = /home/runner/work/metta-testsuite/metta-testsuite/tests/baseline_compat/hyperon-experimental_scripts/a1_symbols.metta 0 )
 <span class="ansi1"
@@ -383,7 +383,7 @@ Deterministic: <span class="ansi33"
 <span class="ansi31"
 >#(in #(maybe_halt 7) #(unwind #(halt 7)))
 </span>
-Script done on 2024-12-18 22:29:17+00:00 [COMMAND_EXIT_CODE="7"]
+Script done on 2024-12-19 18:25:08+00:00 [COMMAND_EXIT_CODE="7"]
 
 </pre>
 </body>

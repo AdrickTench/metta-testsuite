@@ -40,7 +40,7 @@
 <body class="body_foreground body_background" style="font-size: normal;" >
 <pre class="ansi2html-content"
 >
-Script started on 2024-12-18 22:37:14+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="-1" LINES="-1"]
+Script started on 2024-12-19 18:33:39+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="-1" LINES="-1"]
 P;HTML|
 ;         #(set_debug transpiler false)
 
@@ -109,7 +109,7 @@ Script started on 2024-12-18 22:37:14+00:00 [TERM="xterm-256color" TTY="/dev/pts
 P;HTML|
 ;                         #( = 1 "[()]" )
 P;HTML|
-;                         #( = 2 "[(Error (assertEqualToResult (match GroundingSpace-0x55ed5cc48518 (friend bob $f) (match GroundingSpace-0x55ed5cc48518 (carpenter $f) $f)) (larry)) " )
+;                         #( = 2 "[(Error (assertEqualToResult (match GroundingSpace-0x555bf6d7f518 (friend bob $f) (match GroundingSpace-0x555bf6d7f518 (carpenter $f) $f)) (larry)) " )
 P;HTML|
 ;                         #( = 2 "Expected: [larry]" )
 P;HTML|
@@ -117,9 +117,9 @@ Script started on 2024-12-18 22:37:14+00:00 [TERM="xterm-256color" TTY="/dev/pts
 P;HTML|
 ;                          #( = 3 "Missed result: larry)]" )
 P;HTML|
-;                           #( = 3 "0.04user 0.00system 0:00.04elapsed 97%CPU (0avgtext+0avgdata 25940maxresident)k" )
+;                           #( = 3 "0.03user 0.00system 0:00.04elapsed 100%CPU (0avgtext+0avgdata 26068maxresident)k" )
 P;HTML|
-;                           #( = 3 "0inputs+0outputs (0major+3106minor)pagefaults 0swaps" )
+;                           #( = 3 "0inputs+0outputs (0major+3111minor)pagefaults 0swaps" )
 P;HTML|
 ;                        #(load_answer_file /home/runner/work/metta-testsuite/metta-testsuite/tests/baseline_compat/hyperon-mettalog_sanity/idiomatic_negation_and_set_difference_he_805.metta.answers /home/runner/work/metta-testsuite/metta-testsuite/tests/baseline_compat/hyperon-mettalog_sanity/idiomatic_negation_and_set_difference_he_805.metta)
 
@@ -153,7 +153,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.IDIOMATIC-NEGATION-AND-SET-DIFFERENCE-HE-805.01</h3>
 ; 
 ; EVAL TEST
-; took 0.000193 secs. (193.06 microseconds) 
+; took 0.000189 secs. (189.02 microseconds) 
 
 !(assertEqualToResult (match &test-space (friend bob $f) (match &test-space (carpenter $f) $f)) (larry))
 
@@ -175,7 +175,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.IDIOMATIC-NEGATION-AND-SET-DIFFERENCE-HE-805.02</h3>
 ; 
 ; EVAL TEST
-; took 0.000275 secs. (275.31 microseconds) 
+; took 0.000245 secs. (244.58 microseconds) 
 
 !(assertEqualToResult (unify &test-space (friend bob $f) (unify &test-space (carpenter $f) (empty) $f) (empty)) (mike))
 
@@ -213,7 +213,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.IDIOMATIC-NEGATION-AND-SET-DIFFERENCE-HE-805.03</h3>
 ; 
 ; EVAL TEST
-; took 0.000244 secs. (244.12 microseconds) 
+; took 0.000237 secs. (236.53 microseconds) 
 
 !(assertEqualToResult (unify &test-space (mammal $m) (unify &test-space (pet $m) (empty) $m) (empty)) (tiger))
 
@@ -235,7 +235,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.IDIOMATIC-NEGATION-AND-SET-DIFFERENCE-HE-805.04</h3>
 ; 
 ; EVAL TEST
-; took 0.000414 secs. (413.71 microseconds) 
+; took 0.000567 secs. (567.27 microseconds) 
 
 !(assertEqualToResult (superpose ((unify &test-space (mammal $m) $m (empty)) (unify &test-space (bird $b) $b (empty)))) (tiger cat dog vulture parrot))
 
@@ -257,7 +257,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-METTALOG-SANITY.IDIOMATIC-NEGATION-AND-SET-DIFFERENCE-HE-805.05</h3>
 ; 
 ; EVAL TEST
-; took 0.000227 secs. (226.64 microseconds) 
+; took 0.000222 secs. (222.06 microseconds) 
 
 !(assertEqualToResult (unify &test-space ($p $s) (unify &test-space (pet $s) (empty) $s) (empty)) (tiger vulture))
 
@@ -269,7 +269,7 @@ Deterministic: <span class="ansi33"
 Deterministic: <span class="ansi33"
 >(#(Error #(got ()) #(expected (tiger vulture))))
 </span><span class="ansi32"
->% 271,820 inferences, 0.078 CPU in 0.081 seconds (97% CPU, 3474962 Lips)
+>% 263,755 inferences, 0.076 CPU in 0.078 seconds (97% CPU, 3481688 Lips)
 </span>P;HTML|
 ;                #( = /home/runner/work/metta-testsuite/metta-testsuite/tests/baseline_compat/hyperon-mettalog_sanity/idiomatic_negation_and_set_difference_he_805.metta 0 )
 <span class="ansi1"
@@ -322,7 +322,7 @@ Deterministic: <span class="ansi33"
 <span class="ansi31"
 >#(in #(maybe_halt 7) #(unwind #(halt 7)))
 </span>
-Script done on 2024-12-18 22:37:22+00:00 [COMMAND_EXIT_CODE="7"]
+Script done on 2024-12-19 18:33:46+00:00 [COMMAND_EXIT_CODE="7"]
 
 </pre>
 </body>

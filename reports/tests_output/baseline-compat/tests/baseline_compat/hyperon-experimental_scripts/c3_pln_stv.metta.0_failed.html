@@ -43,7 +43,7 @@
 <body class="body_foreground body_background" style="font-size: normal;" >
 <pre class="ansi2html-content"
 >
-Script started on 2024-12-18 22:30:32+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="-1" LINES="-1"]
+Script started on 2024-12-19 18:26:23+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="-1" LINES="-1"]
 P;HTML|
 ;         #(set_debug transpiler false)
 
@@ -120,9 +120,9 @@ Script started on 2024-12-18 22:30:32+00:00 [TERM="xterm-256color" TTY="/dev/pts
 P;HTML|
 ;                          #( = 5 "[()]" )
 P;HTML|
-;                           #( = 6 "0.16user 0.00system 0:00.16elapsed 100%CPU (0avgtext+0avgdata 26656maxresident)k" )
+;                           #( = 6 "0.15user 0.01system 0:00.17elapsed 98%CPU (0avgtext+0avgdata 26796maxresident)k" )
 P;HTML|
-;                           #( = 6 "0inputs+0outputs (0major+3257minor)pagefaults 0swaps" )
+;                           #( = 6 "0inputs+0outputs (0major+3265minor)pagefaults 0swaps" )
 P;HTML|
 ;                        #(load_answer_file /home/runner/work/metta-testsuite/metta-testsuite/tests/baseline_compat/hyperon-experimental_scripts/c3_pln_stv.metta.answers /home/runner/work/metta-testsuite/metta-testsuite/tests/baseline_compat/hyperon-experimental_scripts/c3_pln_stv.metta)
 
@@ -214,7 +214,7 @@ Script started on 2024-12-18 22:30:32+00:00 [TERM="xterm-256color" TTY="/dev/pts
 >;; HYPERON-EXPERIMENTAL-SCRIPTS.C3-PLN-STV.01</h3>
 ; 
 ; EVAL TEST
-; took 0.014 secs. (14.44 milliseconds) 
+; took 0.015 secs. (14.66 milliseconds) 
 
 !(assertEqual (TV (And (PA) (PB))) (stv 0.3 0.8))
 
@@ -234,7 +234,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-EXPERIMENTAL-SCRIPTS.C3-PLN-STV.02</h3>
 ; 
 ; EVAL TEST
-; took 0.008 secs. (7.86 milliseconds) 
+; took 0.008 secs. (7.73 milliseconds) 
 
 !(assertEqual (TV (FA)) (stv 0.4 0.8))
 
@@ -269,7 +269,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-EXPERIMENTAL-SCRIPTS.C3-PLN-STV.03</h3>
 ; 
 ; EVAL TEST
-; took 0.002 secs. (2.04 milliseconds) 
+; took 0.002 secs. (1.83 milliseconds) 
 
 !(assertEqual (TV (croaks Fritz)) (stv 0.95 0.85))
 
@@ -289,7 +289,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-EXPERIMENTAL-SCRIPTS.C3-PLN-STV.04</h3>
 ; 
 ; EVAL TEST
-; took 0.022 secs. (22.12 milliseconds) 
+; took 0.020 secs. (19.63 milliseconds) 
 
 !(assertEqual (TV (frog Fritz)) (stv 0.783 0.68))
 
@@ -309,7 +309,7 @@ Deterministic: <span class="ansi33"
 >;; HYPERON-EXPERIMENTAL-SCRIPTS.C3-PLN-STV.05</h3>
 ; 
 ; EVAL TEST
-; took 0.047 secs. (47.22 milliseconds) 
+; took 0.044 secs. (43.62 milliseconds) 
 
 !(assertEqual (TV (green Fritz)) (stv 0.7047 0.68))
 
@@ -322,7 +322,7 @@ Deterministic: <span class="ansi33"
 Deterministic: <span class="ansi33"
 >()
 </span><span class="ansi32"
->% 768,341 inferences, 0.175 CPU in 0.177 seconds (99% CPU, 4400987 Lips)
+>% 777,438 inferences, 0.171 CPU in 0.173 seconds (99% CPU, 4546522 Lips)
 </span>P;HTML|
 ;                #( = /home/runner/work/metta-testsuite/metta-testsuite/tests/baseline_compat/hyperon-experimental_scripts/c3_pln_stv.metta 0 )
 <span class="ansi1"
@@ -373,7 +373,7 @@ Deterministic: <span class="ansi33"
 <span class="ansi31"
 >#(in #(maybe_halt 7) #(unwind #(halt 7)))
 </span>
-Script done on 2024-12-18 22:30:40+00:00 [COMMAND_EXIT_CODE="7"]
+Script done on 2024-12-19 18:26:31+00:00 [COMMAND_EXIT_CODE="7"]
 
 </pre>
 </body>
