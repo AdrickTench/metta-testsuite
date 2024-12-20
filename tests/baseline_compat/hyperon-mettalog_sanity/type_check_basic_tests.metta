@@ -51,3 +51,29 @@
 
 !(assertEqualToResult (get-type (indirection (hammered myHammer myNail (indirection (painted myPaint myWall))))) (Object))
 !(assertEqualToResult (get-type (indirection (hammered myHammer myNail (indirection (painted "notPaint" myWall))))) ())
+
+;; function as arg, set types
+
+(: iterN (-> Number Number (-> Number Number) Number))
+(: add1 (-> Number Number))
+(: toString (-> $t String))
+
+!(assertEqualToResult (get-type (iterN 5 3 add1)) (Number))
+!(assertEqualToResult (get-type (iterN 5 3 +)) ())
+!(assertEqualToResult (get-type (iterN 5 3 toString)) ())
+
+;; function as arg, implicit types
+
+(: iterX (-> $x $x (-> $x $x) $x))
+
+!(assertEqualToResult (get-type (iterX 5 3 add1)) (Number))
+!(assertEqualToResult (get-type (iterX 5 3 +)) ())
+!(assertEqualToResult (get-type (iterX 5 3 toString)) ())
+
+!(assertEqualToResult (get-type (iterX "5" "3" toString)) (String))
+!(assertEqualToResult (get-type (iterX "5" "3" indirection)) (String))
+!(assertEqualToResult (get-type (iterX "5" "3" add1)) ())
+
+!(assertEqualToResult (get-type (iterX (hammered myHammer myNail (painted myPaint myWall)) (indirection (hammered myHammer myNail (indirection (painted myPaint myWall)))) indirection)) (Object))
+!(assertEqualToResult (get-type (iterX (hammered myHammer myNail (painted myPaint myWall)) (indirection (hammered myHammer myNail (indirection (painted myPaint myWall)))) add1)) ())
+!(assertEqualToResult (get-type (iterX (hammered myHammer myNail (painted myPaint myWall)) (indirection (hammered myHammer myNail (indirection (painted myPaint myWall)))) toString)) ())
